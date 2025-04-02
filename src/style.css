@@ -482,6 +482,8 @@ button:focus {
   border: none !important;
   color: white !important;
   background-color: transparent !important;
+  padding: 10px; /* Add appropriate padding for desktop */
+  margin: 0;
 }
 
 .about-activity {
@@ -490,10 +492,10 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
-  p {
-    word-spacing: normal;  /* Reset word spacing on mobile */
-    line-height: 1.5;      /* Slightly adjust line height for mobile */
+@media (max-width: 768px) {
+  .quote-card-view {
+    padding: 5px; /* Reduce padding on mobile */
+    margin: 0;
   }
 }
 /* --------- */
