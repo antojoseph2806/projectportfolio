@@ -491,8 +491,9 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
+  p {
+    word-spacing: normal;  /* Reset word spacing on mobile */
+    line-height: 1.5;      /* Slightly adjust line height for mobile */
   }
 }
 /* --------- */
