@@ -19,36 +19,37 @@ function Home2() {
               Let Me <span className="purple"> Introduce </span> Myself
             </h1>
             <p className="home-about-body">
-              I'm a PG student, currently pursuing MCA at Amal Jyothi College Of Engineering
-              (Autonomous),Kanjirappally.
+            I am a postgraduate student currently pursuing a Master of Computer Applications (MCA) at
+            <i>
+                <b className="purple"> Amal Jyothi College of Engineering (Autonomous), Kanjirappally.</b>
+              </i> 
               <br />
-              <br />I am fluent in programming languages like
-              <i>
-                <b className="purple"> C,C++,Python,Javascript and Php. </b>
+              <br />I possess proficiency in several programming languages, including <i>
+                <b className="purple">C, C++,Php,Python,React,Etc.. </b>
+                <b className="purple"> </b>
               </i>
               <br />
+              <br />My primary areas of interest lie in developing<i>
+                <b className="purple">developing innovative web technologies. </b>
+                <b className="purple"> </b>
+                </i>
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also have Interest in{" "}
-                <b className="purple">
-                  Photography.
-                </b>
-              </i>
-              <br />
-              <br />
-              I am actively seeking a position that will allow me to grow and advance in my <i>
+              <br/>
+              I am actively seeking opportunities that will allow me to further enhance my technical skills and contribute meaningfully to the growth of the organization, while advancing in my <i>
                 <b className="purple">
                   {" "}
-                  Technical career.
+                  professional career.
                 </b>
                 </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg}    className="img-fluid rounded-circle" alt="avatar" />
+            <img 
+  src={myImg} 
+  className="img-fluid rounded-box" 
+  alt="avatar" 
+/>
             </Tilt>
           </Col>
         </Row>

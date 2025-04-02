@@ -9,13 +9,13 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Anto Joseph </span>
-            from <span className="purple"> Kerala, India.</span>
+            from <span className="purple"> Idukki,Kerala.</span>
             <br />
             <br />
-            I am currently pursuing MCA at AJCE Kanjirappally.
+            I am currently pursuing MCA at Amaljyothi college of engineering, Kanjirappally.
             <br />
             <br />
-            I have completed BCA from MES College Nedumkandam.
+            I have completed graduation in BCA from MES College Nedumkandam.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -23,6 +23,9 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Games
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Watching movies
             </li>
             <li className="about-activity">
               <ImPointRight /> Drawing pictures
@@ -33,9 +36,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "#FFBB00" }}>
-            "Every mistake is a opportunity to learn something new!"{" "}
+            "You Are Your Only Competition"{" "}
           </p>
-          <footer className="blockquote-footer">An To</footer>
+          <footer className="blockquote-footer">?</footer>
         </blockquote>
       </Card.Body>
     </Card>
