@@ -436,68 +436,86 @@ button:focus {
   color: #FFBB00 !important;
 }
 /* --------- */
-/* About */
+/* About Section */
 /* --------- */
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 120px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  text-align: center !important; /* Ensures no extra word spacing */
+  word-spacing: normal !important; /* Fixes weird spacing */
 }
 
+/* --------- */
+/* Tech Icons */
+/* --------- */
+
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
+  font-size: 4.2em !important;
+  margin: 10px auto !important; /* Centering */
   padding: 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  display: inline-block !important; /* Prevents weird spacing */
+  box-shadow: 3px 4px 6px rgba(89, 4, 168, 0.2) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out !important;
 }
 
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    font-size: 3.5em !important;
+    margin: 5px auto !important; /* Avoids excessive spacing */
+    display: inline-block !important;
   }
 }
 
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
-}
+/* --------- */
+/* Text & Quote Card Fix */
+/* --------- */
 
 .quote-card-view {
   border: none !important;
   color: white !important;
   background-color: transparent !important;
-  padding: 10px; /* Add appropriate padding for desktop */
-  margin: 0;
-}
-
-.about-activity {
-  list-style: none !important;
-  text-align: left !important;
-  padding-left: 1px !important;
+  padding: 10px;
+  margin: 0 auto !important;
+  text-align: center !important; /* Ensures correct alignment */
+  word-spacing: normal !important; /* Prevents unnecessary gaps */
+  max-width: 90% !important; /* Prevents text from stretching too wide */
 }
 
 @media (max-width: 768px) {
   .quote-card-view {
-    padding: 5px; /* Reduce padding on mobile */
-    margin: 0;
+    padding: 5px !important;
+    word-break: break-word !important; /* Forces proper text wrapping */
+    max-width: 95% !important;
   }
 }
+
+/* --------- */
+/* About Activity List */
+/* --------- */
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 10px !important; /* Prevents text sticking too close to the edge */
+  word-spacing: normal !important;
+}
+
+@media (max-width: 768px) {
+  .about-activity {
+    padding-left: 5px !important;
+    word-break: break-word !important; /* Fixes any text overflow */
+  }
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -618,26 +636,4 @@ button:focus {
   100% {
     transform: scale(1);
   }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }
